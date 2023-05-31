@@ -1,0 +1,27 @@
+name: seeable
+channels:
+  - defaults
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.9
+  - pytorch
+  - torchvision
+  - torchaudio
+  - cudatoolkit=11.3
+  - hydra-core
+  - tensorboard
+  - scikit-learn
+  #- scikit-learn-intelex
+  - matplotlib
+  - pandas
+  # parquet support
+  - fastparquet
+  - pyarrow
+  - imgaug
+  - albumentations
+  - einops
+  - tqdm
+  - pip
+  - pip:
+      - facenet-pytorch

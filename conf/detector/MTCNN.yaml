@@ -1,0 +1,14 @@
+_target_: src.detector.Detector
+name: MTCNN
+model:
+  _target_: facenet_pytorch.MTCNN
+  image_size: 160
+  margin: 0
+  min_face_size: 20
+  thresholds: [0.6, 0.7, 0.7]
+  factor: 0.709
+  post_process: True
+  select_largest: False # True
+  selection_method: "probability" # None
+  keep_all: True # False
+  device:

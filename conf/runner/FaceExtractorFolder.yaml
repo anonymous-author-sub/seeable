@@ -1,0 +1,6 @@
+_target_: src.preprocess.FaceExtractorFolder
+_args_:
+  - cfg
+input_path:
+output_path:
+detector: ${detector}

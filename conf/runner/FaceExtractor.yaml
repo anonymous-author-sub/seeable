@@ -1,0 +1,5 @@
+_target_: src.preprocess.FaceExtractor
+_args_:
+  - cfg
+root:
+detector: ${detector}

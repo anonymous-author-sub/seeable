@@ -1,0 +1,5 @@
+_target_: src.runner.train.Train
+_args_:
+  - cfg
+dataset: ${dataset}
+dataloader: ${dataloader}

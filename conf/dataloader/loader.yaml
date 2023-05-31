@@ -1,0 +1,17 @@
+_target_: torch.utils.data.DataLoader
+dataset: ${dataset}
+batch_size: ???
+shuffle: False
+sampler:
+batch_sampler:
+num_workers: 0
+#_target_: torch.utils.data.dataloader.default_collate
+collate_fn:
+  _partial_: True
+  _target_: src.dataset.collator.collate_fn
+pin_memory: False
+drop_last: True
+timeout: 0
+worker_init_fn:
+prefetch_factor: 2
+persistent_workers: False

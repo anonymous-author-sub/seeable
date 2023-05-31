@@ -1,0 +1,7 @@
+_target_: src.preprocess.frame_extractor.FrameExtractor
+_args_:
+  - cfg
+dataset: ${dataset}
+root:
+picture_type: I
+extension: png

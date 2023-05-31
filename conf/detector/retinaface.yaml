@@ -1,0 +1,4 @@
+_target_: src.detector.retinaface.Model
+checkpoint: "weights/retinaface/retinaface_resnet50_2020-07-20.pth"
+max_size: 2048
+device: "cpu"

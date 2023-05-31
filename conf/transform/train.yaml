@@ -1,0 +1,26 @@
+_target_: albumentations.Compose
+transforms:
+  - _target_: src.augmentations.face.FaceCrop
+    always_apply: True
+    #crop_by_bbox: True
+    #use_margin: False
+    #phase: "test"
+    crop_by_bbox: True
+    use_margin: False
+    phase: "test"
+  - _target_: src.augmentations.face.FaceHorizontalFlip
+    p: 0.5
+    always_apply: True
+
+  - _target_: src.augmentations.face.FaceResize
+    height: 224
+    width: 224
+    #  interpolation: 1
+    always_apply: True
+
+  - _target_: src.augmentations.face.FaceMask
+    p: 0.5
+    always_apply: True
+
+  - _target_: albumentations.pytorch.ToTensorV2
+    always_apply: True

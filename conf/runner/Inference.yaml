@@ -1,0 +1,8 @@
+_target_: src.runner.inference.Inference
+_args_:
+  - cfg
+model: ${encoder}
+dataset: ${dataset}
+detector: ${detector}
+n_frames: 30
+save_img: False

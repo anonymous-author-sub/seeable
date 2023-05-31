@@ -1,0 +1,3 @@
+_target_: src.encoder.sbi_eff4.SbiEff4
+path: efficientnetb4_raw.pt
+weights_path:

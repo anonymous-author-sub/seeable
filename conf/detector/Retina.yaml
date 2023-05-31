@@ -1,0 +1,9 @@
+_target_: src.detector.Detector
+name: Retina
+model:
+  _target_: src.detector.retina.Retina
+  cfg_name: Resnet50
+  checkpoint: weights/Pytorch_Retinaface/Resnet50_Final.pth
+  threshold: 0.9
+  device:
+  load_to_cpu: True

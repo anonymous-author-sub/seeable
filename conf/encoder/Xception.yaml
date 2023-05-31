@@ -1,0 +1,4 @@
+_target_: src.encoder.xception.xception
+pretrained: False
+num_classes: 1000
+feat_dim: 2048

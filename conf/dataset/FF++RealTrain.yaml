@@ -1,0 +1,9 @@
+_target_: src.dataset.DatasetDeepfakes
+root: ???
+csv: ???
+name: FaceForensics++
+selector: { "label": 0, "split": "train" }
+metas: "{quality:${quality}}"
+level: "face"
+use_cache: True
+transform: ${transform}

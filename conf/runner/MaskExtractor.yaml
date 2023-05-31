@@ -1,0 +1,6 @@
+_target_: src.preprocess.MaskExtractor
+_args_:
+  - cfg
+dataset: ${dataset}
+root:
+column: "target_mask_path"
